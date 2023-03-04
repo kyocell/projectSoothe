@@ -2,7 +2,7 @@ const musicBtn = document.querySelector('.musicBtn');
 const audioElementMaster = {
     1: {
         'name': 'White Noise',
-        'audioSrc': 'https://www.youtube.com/watch?v=nMfPqeZjc2c',
+        'audioSrc': 'sdad',
     }, 
     2: {
         'name': 'Pink Noise',
@@ -10,7 +10,7 @@ const audioElementMaster = {
     },
     3: {
         'name': 'Brown Noise',
-        'audioSrc': 'asd',
+        'audioSrc': 'sda',
     },
     4: {
         'name': 'Table Fan',
@@ -67,6 +67,12 @@ const audioElementMaster = {
 
 }
 let audioObjectStateHandler = {};
+
+const masterVolumeSliderInput = document.querySelector('.masterVolumeSlider');
+
+// masterVolumeSliderInput.oninput = function () {
+
+// }
 
 function playAudioConstructor(className) {
     let hoveredElementClassNumber = className.substring(10, className.length);
@@ -130,6 +136,8 @@ function createAudioObject(audioSource, activeAudioClassNumber) {
         }
     } else {
         let newAudio = new Audio(audioSource);
+        newAudio.loop = true;
+        newAudio.play();
         audioObjectStateHandler[activeAudioClassNumber] = {
             'flag': true,
             'audioObject': newAudio,
