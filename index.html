@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css">
+
+
+    <title>Home | Soothe</title>
+</head>
+<body id="vantajs">
+    <center>
+        <div class="headingContainer">
+            <h1 class="heading">Project <i class="bi bi-earbuds"></i> Soothe</h1>
+            <h5 class="subHeading">Comforting masking sounds <br> to help you focus.</h5>
+        </div>
+        <div class="masterAudioController">
+            <i class="bi bi-volume-up"></i><input type="range" min="1" max="100" value="50" class="masterVolumeSlider" id="myMasterVolumeSlider">
+        </div>
+    </center>
+
+    <div class="buttonsContainer">
+        <center>
+            <table>
+                <tr>
+                    <td><button class="musicBtn colorNoiseCategory musicBtn-1" onmouseover="createToolTip('.musicBtn-1')" onclick="playAudioConstructor('.musicBtn-1')"><i class="bi bi-soundwave"></i></button></td>
+                    <td><button class="musicBtn colorNoiseCategory musicBtn-2" onmouseover="createToolTip('.musicBtn-2')" onclick="playAudioConstructor('.musicBtn-2')"><i class="bi bi-soundwave"></i></button></td>
+                    <td><button class="musicBtn colorNoiseCategory musicBtn-3" onmouseover="createToolTip('.musicBtn-3')" onclick="playAudioConstructor('.musicBtn-3')"><i class="bi bi-soundwave"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button class="musicBtn tableMiscCategory musicBtn-4" onmouseover="createToolTip('.musicBtn-4')" onclick="playAudioConstructor('.musicBtn-4')"><i class="bi bi-fan"></i></button></td>
+                    <td><button class="musicBtn tableMiscCategory musicBtn-5" onmouseover="createToolTip('.musicBtn-5')" onclick="playAudioConstructor('.musicBtn-5')"><i class="bi bi-keyboard-fill"></i></button></td>
+                    <td><button class="musicBtn tableMiscCategory musicBtn-6" onmouseover="createToolTip('.musicBtn-6')" onclick="playAudioConstructor('.musicBtn-6')"><i class="bi bi-vector-pen"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button class="musicBtn dayAmbienceCategory musicBtn-7" onmouseover="createToolTip('.musicBtn-7')" onclick="playAudioConstructor('.musicBtn-7')"><i class="bi bi-moon-stars-fill"></i></button></td>
+                    <td><button class="musicBtn dayAmbienceCategory musicBtn-8" onmouseover="createToolTip('.musicBtn-8')" onclick="playAudioConstructor('.musicBtn-8')"><i class="bi bi-brightness-alt-high-fill"></i></i></button></td>
+                    <td><button class="musicBtn dayAmbienceCategory musicBtn-9" onmouseover="createToolTip('.musicBtn-9')" onclick="playAudioConstructor('.musicBtn-9')"><i class="bi bi-wind"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button class="musicBtn weatherAmbienceCategory musicBtn-10" onmouseover="createToolTip('.musicBtn-10')" onclick="playAudioConstructor('.musicBtn-10')"><i class="bi bi-cloud-lightning-rain-fill"></i></i></button></td>
+                    <td><button class="musicBtn weatherAmbienceCategory musicBtn-11" onmouseover="createToolTip('.musicBtn-11')" onclick="playAudioConstructor('.musicBtn-11')"><i class="bi bi-umbrella-fill"></i></button></td>
+                    <td><button class="musicBtn weatherAmbienceCategory musicBtn-12" onmouseover="createToolTip('.musicBtn-12')" onclick="playAudioConstructor('.musicBtn-12')"><i class="bi bi-cloud-rain-heavy"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button class="musicBtn placeAmbienceCategory musicBtn-13" onmouseover="createToolTip('.musicBtn-13')" onclick="playAudioConstructor('.musicBtn-13')"><i class="bi bi-cup-hot-fill"></i></button></td>
+                    <td><button class="musicBtn placeAmbienceCategory musicBtn-14" onmouseover="createToolTip('.musicBtn-14')" onclick="playAudioConstructor('.musicBtn-14')"><i class="bi bi-fire"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button class="musicBtn beachCategory musicBtn-15" onmouseover="createToolTip('.musicBtn-15')" onclick="playAudioConstructor('.musicBtn-15')"><i class="bi bi-tsunami"></i></button></td>
+                    <td><button class="musicBtn beachCategory musicBtn-16" onmouseover="createToolTip('.musicBtn-16')" onclick="playAudioConstructor('.musicBtn-16')"><i class="bi bi-water"></i></button></td>
+                </tr>
+            </table>
+        </center>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="three.r134.min.js"></script>
+    <script src="vanta.fog.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
